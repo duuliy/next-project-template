@@ -8,11 +8,15 @@ const nextConfig = {
     config.plugins.push(
       new options.webpack.container.ModuleFederationPlugin({
         name: "fe2",
-        library: { type: config.output.libraryTarget, name: "fe2" }, //这个貌似没起作用
+          remotes: {
+            fe1: 'fe1@http://localhost:3000/_next/static/runtime/remoteEntry.js',
+          },
+        // library: { type: config.output.libraryTarget, name: "fe2" }, //这个貌似没起作用
         filename: "static/runtime/remoteEntry2.js",
-        remoteType: "var",
+        // remoteType: "var",
         exposes: {
-          "./squareRoot": "./src/utils/getSquareRoot.js"
+          // "./squareRoot": "./src/utils/getSquareRoot.js"
+            "./headerWrap": "./component/HeaderWrap"
         },
         shared: [
           {

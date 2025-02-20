@@ -15,7 +15,7 @@ const nextConfig = {
         // remoteType: "var",
         remotes: {
           // fe1: options.isServer ? path.resolve(__dirname, '../fe1/.next/static/runtime/remoteEntry.js') : 'fe1',
-          // fe2: options.isServer ? path.resolve(__dirname, '../fe2/.next/static/runtime/remoteEntry_2.js') : 'fe2', 
+          // fe2: options.isServer ? path.resolve(__dirname, '../fe2/.next/static/runtime/remoteEntry_2.js') : 'fe2',
           fe1: 'fe1@http://localhost:3000/_next/static/runtime/remoteEntry.js',
           fe2: 'fe2@http://localhost:3001/_next/static/runtime/remoteEntry2.js',
           //这里只能结合webpack5联邦模块的exposes导出的remoteEntry ，如果用chunks自身打包的文件则无法找到路径

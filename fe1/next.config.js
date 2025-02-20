@@ -8,7 +8,7 @@ const nextConfig = {
     config.plugins.push(
       new options.webpack.container.ModuleFederationPlugin({
         name: "fe1",
-        library: { type: config.output.libraryTarget, name:"fe1"},
+        // library: { type: config.output.libraryTarget, name:"fe1"},
         filename: "static/runtime/remoteEntry.js", // remote file name which will used later
         // remoteType: "var",
         exposes: { // expose all component here.

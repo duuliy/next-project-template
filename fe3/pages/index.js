@@ -11,8 +11,9 @@ import styles from '../styles/Home.module.css'
 // const Header = React.lazy(() => import('fe1/header'))
 // const squareRoot = React.lazy(() => import('fe2/getSquareRoot'))
 // next的ssr不支持模块联邦的ssr 所以设置false ，目前只有 @module-federation/nextjs-mf  付费支持ssr
-const Header = dynamic(() => import("fe1/header"), { ssr: false })
-const getSquareRoot = dynamic(() => import("fe2/squareRoot"), {ssr: false })
+// const Header = dynamic(() => import("fe1/header"), { ssr: false })
+const HeaderWrap = dynamic(() => import("fe2/headerWrap"), { ssr: false })
+// const getSquareRoot = dynamic(() => import("fe2/squareRoot"), {ssr: false })
 
 // console.log(Header)
 // console.log(getSquareRoot)
@@ -27,10 +28,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header name='duuliy222' />
+      {/*<Header name='duuliy333' />*/}
+        <HeaderWrap name='duuliy333' />
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Square root of 4: {getSquareRoot({ number:4})}
+          {/*Square root of 4: {getSquareRoot({ number:4})}*/}
         </h1>
 
 

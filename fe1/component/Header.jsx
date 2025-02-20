@@ -13,7 +13,7 @@ const Header = ({ name = 'world' }) => {
         fontSize: '24px',
         paddingLeft: '15px'
       }}>
-      hello {name} 666
+      hello {name}
     </div>
   );
 };
