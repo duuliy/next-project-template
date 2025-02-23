@@ -242,6 +242,18 @@
     "@module-federation/runtime-core" "0.6.21"
     "@module-federation/sdk" "0.9.0"
 
+"@module-federation/runtime@~0.2.6":
+  version "0.2.8"
+  resolved "https://registry.yarnpkg.com/@module-federation/runtime/-/runtime-0.2.8.tgz#8eb9e217b60506d61faa425616c6563984730290"
+  integrity sha512-8xmA/+z1zD09F5qU8VnSWLExqTCVWoHOguXsCX79kkqp7i0c+D2YaebWzlQ2kku+DU+0VIzXpQ3BBcumZ3v3wQ==
+  dependencies:
+    "@module-federation/sdk" "0.2.8"
+
+"@module-federation/sdk@0.2.8":
+  version "0.2.8"
+  resolved "https://registry.yarnpkg.com/@module-federation/sdk/-/sdk-0.2.8.tgz#f88671b68f80dc4a52fa7ac440e4f6cdabd15772"
+  integrity sha512-eGMnJxdRDgt6dtMv8gkAlzEbTPWVHb3AHUNUG0w56wcbIF0RHC6kmvpHpSQyq4DVGWv3U4g/ZiH5BvBlqEelDQ==
+
 "@module-federation/sdk@0.9.0":
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/@module-federation/sdk/-/sdk-0.9.0.tgz#6bc97d506b7761592157d0d605fabac364be0f6a"

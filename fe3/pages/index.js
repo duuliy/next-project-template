@@ -3,6 +3,7 @@ import dynamic from "next/dynamic"
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { loadRemote } from '@module-federation/runtime'
 // import squareRoot from 'fe2/getSquareRoot'
 // import Header from 'fe1/header'
 
@@ -12,7 +13,8 @@ import styles from '../styles/Home.module.css'
 // const squareRoot = React.lazy(() => import('fe2/getSquareRoot'))
 // next的ssr不支持模块联邦的ssr 所以设置false ，目前只有 @module-federation/nextjs-mf  付费支持ssr
 // const Header = dynamic(() => import("fe1/header"), { ssr: false })
-const HeaderWrap = dynamic(() => import("fe2/headerWrap"), { ssr: false })
+const HeaderWrap = dynamic(() => loadRemote("fe2/headerWrap"), { ssr: false })
+// const HeaderWrap = dynamic(() => import("fe2/headerWrap"), { ssr: false })
 // const getSquareRoot = dynamic(() => import("fe2/squareRoot"), {ssr: false })
 
 // console.log(Header)
@@ -32,6 +34,7 @@ export default function Home() {
         <HeaderWrap name='duuliy333' />
       <main className={styles.main}>
         <h1 className={styles.title}>
+            第三个
           {/*Square root of 4: {getSquareRoot({ number:4})}*/}
         </h1>
 

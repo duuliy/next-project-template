@@ -47,7 +47,7 @@ const nextConfig = {
           name: "fe3",
             filename: 'static/runtime/remoteEntry3.js', //这个参数必传，或者这里用options.webpack.container.ModuleFederationPlugin都可以实现嵌套打包
           remotes: {
-              fe1: 'fe1@http://localhost:3000/_next/static/runtime/remoteEntry.js',
+              // fe1: 'fe1@http://localhost:3000/_next/static/runtime/remoteEntry.js',
               fe2: "fe2@http://localhost:3001/_next/static/runtime/remoteEntry2.js"
           },
           shared: [

@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@module-federation/nextjs-mf": "^8.4.0",
+    "@module-federation/runtime": "~0.2.6",
     "typescript": "^5.0.4",
     "webpack": "^5.85.0",
     "eslint": "8.30.0",
